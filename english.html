@@ -468,7 +468,7 @@
             box-shadow: 0 10px 25px rgba(10, 36, 99, 0.25);
         }
         
-        /* ===== PROTONMAIL BADGE - UPDATED FOR TWO LOGOS ===== */
+        /* ===== PROTONMAIL BADGE - CORRECTED VERSION ===== */
         .proton-badge {
             display: flex;
             align-items: center;
@@ -530,9 +530,9 @@
             background: rgba(212, 175, 55, 0.1);
         }
         
-        /* Logo pequeño dentro del texto */
+        /* Logo pequeño dentro del texto - TAMAÑO AUMENTADO */
         .inline-proton-logo {
-            height: 22px;
+            height: 30px; /* Aumentado para mejor visibilidad */
             width: auto;
             vertical-align: middle;
             transition: transform 0.3s ease;
@@ -702,6 +702,10 @@
             .proton-text {
                 min-width: auto;
             }
+            
+            .inline-proton-logo {
+                height: 26px;
+            }
         }
         
         @media (max-width: 480px) {
@@ -756,7 +760,7 @@
             }
             
             .inline-proton-logo {
-                height: 20px;
+                height: 24px;
             }
         }
     </style>
@@ -961,7 +965,7 @@
                     </button>
                 </form>
                 
-                <!-- ProtonMail Badge with TWO Logos -->
+                <!-- ProtonMail Badge with TWO Logos - CORRECTED -->
                 <div class="proton-badge">
                     <!-- Logo grande con tagline (protonmail-logo.png) -->
                     <a href="https://proton.me" target="_blank" rel="noopener" class="proton-logo-link">
@@ -971,9 +975,8 @@
                     <div class="proton-text">
                         We use 
                         <a href="https://proton.me" target="_blank" rel="noopener" class="proton-text-link">
-                            <!-- Logo pequeño dentro del texto (proton-logo.png) -->
+                            <!-- Solo la imagen, sin texto adicional -->
                             <img src="proton-logo.png" alt="Proton" class="inline-proton-logo">
-                            Proton
                         </a> 
                         for the security of your information.
                     </div>
