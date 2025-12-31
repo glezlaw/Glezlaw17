@@ -1,0 +1,1015 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Jorge González, LL.M. | International Advisory for Expatriates in Spain</title>
+    <meta name="description" content="From NIE to tax optimization. Your all-in-one advisory solution for establishing yourself in Spain. Specialized support for expatriates on the Costa del Sol.">
+    
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@300;400;500;600;700&family=Inter:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
+    
+    <!-- Font Awesome Icons -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    
+    <style>
+        :root {
+            --navy: #0A2463;
+            --light-navy: #1E3A8A;
+            --gold: #D4AF37;
+            --dark-gold: #B8941F;
+            --light-gray: #F8F9FA;
+            --medium-gray: #E5E7EB;
+            --dark-gray: #374151;
+            --white: #FFFFFF;
+        }
+        
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        
+        body {
+            font-family: 'Inter', -apple-system, BlinkMacSystemFont, sans-serif;
+            color: var(--dark-gray);
+            line-height: 1.6;
+            background-color: var(--white);
+            scroll-behavior: smooth;
+        }
+        
+        h1, h2, h3, h4 {
+            font-family: 'Cormorant Garamond', serif;
+            color: var(--navy);
+            font-weight: 600;
+        }
+        
+        /* ===== HEADER & NAVIGATION ===== */
+        .main-header {
+            background: linear-gradient(135deg, var(--navy) 0%, var(--light-navy) 100%);
+            color: var(--white);
+            padding: 1.5rem 2rem 5rem;
+            position: relative;
+        }
+        
+        .header-content {
+            max-width: 1200px;
+            margin: 0 auto;
+            position: relative;
+        }
+        
+        /* Top Navigation */
+        .top-nav {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            margin-bottom: 3rem;
+            padding-bottom: 1rem;
+            border-bottom: 1px solid rgba(255, 255, 255, 0.1);
+        }
+        
+        .logo-nav {
+            display: flex;
+            align-items: center;
+            gap: 1rem;
+            text-decoration: none;
+        }
+        
+        .nav-logo {
+            width: 50px;
+            height: 50px;
+            border-radius: 50%;
+            border: 2px solid var(--gold);
+            object-fit: cover;
+        }
+        
+        .nav-brand {
+            color: var(--white);
+            font-family: 'Cormorant Garamond', serif;
+            font-size: 1.4rem;
+            font-weight: 600;
+        }
+        
+        .nav-links {
+            display: flex;
+            gap: 2.5rem;
+            align-items: center;
+        }
+        
+        .nav-link {
+            color: rgba(255, 255, 255, 0.9);
+            text-decoration: none;
+            font-weight: 500;
+            transition: all 0.3s ease;
+            font-size: 1.05rem;
+        }
+        
+        .nav-link:hover {
+            color: var(--gold);
+        }
+        
+        .language-switcher {
+            margin-left: 2rem;
+        }
+        
+        .lang-btn {
+            display: inline-flex;
+            align-items: center;
+            gap: 0.5rem;
+            background: rgba(255, 255, 255, 0.1);
+            color: var(--white);
+            padding: 0.5rem 1.2rem;
+            border-radius: 20px;
+            text-decoration: none;
+            font-weight: 500;
+            transition: all 0.3s;
+            border: 1px solid rgba(255, 255, 255, 0.2);
+        }
+        
+        .lang-btn:hover {
+            background: var(--gold);
+            color: var(--navy);
+            border-color: var(--gold);
+        }
+        
+        /* Hero Section */
+        .hero-section {
+            text-align: center;
+            max-width: 900px;
+            margin: 0 auto;
+        }
+        
+        .hero-logo {
+            width: 150px;
+            height: 150px;
+            border-radius: 50%;
+            object-fit: cover;
+            margin: 0 auto 2rem;
+            border: 4px solid var(--gold);
+            box-shadow: 0 10px 30px rgba(0, 0, 0, 0.2);
+            background-color: var(--white);
+            padding: 6px;
+        }
+        
+        h1 {
+            font-size: 3.5rem;
+            font-weight: 700;
+            margin-bottom: 1rem;
+            line-height: 1.1;
+            color: var(--white);
+        }
+        
+        .hero-tagline {
+            font-family: 'Cormorant Garamond', serif;
+            font-size: 1.8rem;
+            color: var(--gold);
+            font-weight: 300;
+            font-style: italic;
+            margin-bottom: 1.5rem;
+        }
+        
+        .hero-subtitle {
+            font-size: 1.2rem;
+            max-width: 700px;
+            margin: 0 auto 2.5rem;
+            color: rgba(255, 255, 255, 0.9);
+        }
+        
+        .cta-button {
+            display: inline-block;
+            background-color: var(--gold);
+            color: var(--navy);
+            padding: 1rem 2.5rem;
+            border-radius: 50px;
+            text-decoration: none;
+            font-weight: 700;
+            font-size: 1.1rem;
+            transition: all 0.3s ease;
+            border: 2px solid var(--gold);
+        }
+        
+        .cta-button:hover {
+            background-color: transparent;
+            color: var(--gold);
+            transform: translateY(-3px);
+            box-shadow: 0 10px 20px rgba(212, 175, 55, 0.2);
+        }
+        
+        /* ===== MAIN CONTENT CONTAINER ===== */
+        .main-container {
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 0 2rem;
+        }
+        
+        section {
+            padding: 5rem 0;
+        }
+        
+        .section-title {
+            text-align: center;
+            font-size: 2.8rem;
+            margin-bottom: 3rem;
+            position: relative;
+        }
+        
+        .section-title::after {
+            content: '';
+            display: block;
+            width: 80px;
+            height: 4px;
+            background-color: var(--gold);
+            margin: 1rem auto 0;
+        }
+        
+        /* ===== ABOUT ME SECTION ===== */
+        .about-section {
+            background-color: var(--light-gray);
+        }
+        
+        .about-content {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            gap: 4rem;
+            align-items: center;
+        }
+        
+        .about-photo-column {
+            text-align: center;
+        }
+        
+        .profile-photo {
+            width: 100%;
+            max-width: 450px;
+            border-radius: 12px;
+            box-shadow: 0 15px 40px rgba(0, 0, 0, 0.15);
+            border: 4px solid var(--gold);
+        }
+        
+        .about-text-column {
+            padding: 2.5rem;
+            background: var(--white);
+            border-radius: 16px;
+            box-shadow: 0 8px 25px rgba(0, 0, 0, 0.08);
+        }
+        
+        .about-text-column h3 {
+            font-size: 2rem;
+            margin-bottom: 1.5rem;
+            color: var(--navy);
+        }
+        
+        .credentials-list {
+            list-style: none;
+            margin-bottom: 2rem;
+        }
+        
+        .credentials-list li {
+            padding: 0.6rem 0;
+            font-size: 1.05rem;
+            color: var(--dark-gray);
+            position: relative;
+            padding-left: 2rem;
+            border-bottom: 1px solid var(--medium-gray);
+        }
+        
+        .credentials-list li:last-child {
+            border-bottom: none;
+        }
+        
+        .credentials-list li::before {
+            content: "✓";
+            color: var(--gold);
+            font-weight: bold;
+            position: absolute;
+            left: 0;
+            font-size: 1.2rem;
+        }
+        
+        .highlight-box {
+            background: var(--light-gray);
+            padding: 2rem;
+            border-radius: 10px;
+            margin-top: 2rem;
+            border-left: 4px solid var(--gold);
+        }
+        
+        .highlight-box p {
+            margin-bottom: 1.2rem;
+            line-height: 1.8;
+            text-align: justify;
+            text-justify: inter-word;
+        }
+        
+        .highlight-box p:last-child {
+            margin-bottom: 0;
+        }
+        
+        /* ===== SERVICES SECTION ===== */
+        .services-section {
+            background-color: var(--white);
+        }
+        
+        .services-intro {
+            text-align: center;
+            max-width: 800px;
+            margin: 0 auto 4rem;
+            font-size: 1.2rem;
+            color: var(--dark-gray);
+            line-height: 1.7;
+        }
+        
+        .services-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
+            gap: 2.5rem;
+            margin-top: 2rem;
+        }
+        
+        .service-card {
+            background: var(--white);
+            padding: 2.5rem 2rem;
+            border-radius: 16px;
+            box-shadow: 0 10px 30px rgba(0, 0, 0, 0.08);
+            transition: all 0.3s ease;
+            border-top: 4px solid var(--navy);
+            text-align: center;
+        }
+        
+        .service-card:hover {
+            transform: translateY(-10px);
+            box-shadow: 0 20px 40px rgba(0, 0, 0, 0.12);
+        }
+        
+        .service-icon {
+            font-size: 3.2rem;
+            color: var(--gold);
+            margin-bottom: 1.8rem;
+            height: 80px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        }
+        
+        .service-card h3 {
+            font-size: 1.6rem;
+            margin-bottom: 1.2rem;
+            color: var(--navy);
+        }
+        
+        .service-card p {
+            color: var(--dark-gray);
+            line-height: 1.7;
+            font-size: 1.05rem;
+        }
+        
+        /* ===== CONTACT SECTION ===== */
+        .contact-section {
+            background: linear-gradient(135deg, var(--light-gray) 0%, #EFF6FF 100%);
+        }
+        
+        .contact-container {
+            max-width: 1000px;
+            margin: 0 auto;
+        }
+        
+        .contact-info {
+            text-align: center;
+            margin-bottom: 4rem;
+        }
+        
+        .contact-details {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
+            gap: 2rem;
+            margin-top: 2.5rem;
+        }
+        
+        .contact-item {
+            background: var(--white);
+            padding: 2rem;
+            border-radius: 12px;
+            box-shadow: 0 8px 20px rgba(0, 0, 0, 0.06);
+        }
+        
+        .contact-item h4 {
+            font-size: 1.4rem;
+            margin-bottom: 0.8rem;
+            color: var(--navy);
+        }
+        
+        /* Contact Form */
+        .contact-form {
+            background: var(--white);
+            padding: 3rem;
+            border-radius: 20px;
+            box-shadow: 0 15px 40px rgba(0, 0, 0, 0.1);
+        }
+        
+        .form-group {
+            margin-bottom: 2rem;
+        }
+        
+        .form-group label {
+            display: block;
+            margin-bottom: 0.6rem;
+            font-weight: 600;
+            color: var(--navy);
+            font-size: 1.1rem;
+        }
+        
+        .form-group input,
+        .form-group select,
+        .form-group textarea {
+            width: 100%;
+            padding: 1rem 1.4rem;
+            border: 2px solid var(--medium-gray);
+            border-radius: 10px;
+            font-family: inherit;
+            font-size: 1rem;
+            transition: all 0.3s;
+        }
+        
+        .form-group input:focus,
+        .form-group select:focus,
+        .form-group textarea:focus {
+            outline: none;
+            border-color: var(--gold);
+            box-shadow: 0 0 0 3px rgba(212, 175, 55, 0.2);
+        }
+        
+        .form-group textarea {
+            min-height: 180px;
+            resize: vertical;
+        }
+        
+        .submit-button {
+            background-color: var(--navy);
+            color: var(--white);
+            border: none;
+            padding: 1.2rem 3.5rem;
+            border-radius: 50px;
+            font-weight: 600;
+            font-size: 1.2rem;
+            cursor: pointer;
+            transition: all 0.3s ease;
+            width: 100%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            gap: 0.8rem;
+        }
+        
+        .submit-button:hover {
+            background-color: var(--light-navy);
+            transform: translateY(-3px);
+            box-shadow: 0 10px 25px rgba(10, 36, 99, 0.25);
+        }
+        
+        /* ===== PROTONMAIL BADGE - UPDATED FOR TWO LOGOS ===== */
+        .proton-badge {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            gap: 2rem;
+            margin-top: 3rem;
+            padding: 2rem;
+            background: var(--white);
+            border-radius: 12px;
+            max-width: 750px;
+            margin: 4rem auto 0;
+            box-shadow: 0 8px 25px rgba(0, 0, 0, 0.08);
+            flex-wrap: wrap;
+        }
+        
+        .proton-logo-link {
+            display: flex;
+            align-items: center;
+            text-decoration: none;
+            flex-shrink: 0;
+        }
+        
+        /* Logo grande con tagline "Privacy by default" */
+        .proton-badge-logo {
+            height: 70px;
+            width: auto;
+            display: block;
+            transition: transform 0.3s ease;
+        }
+        
+        .proton-logo-link:hover .proton-badge-logo {
+            transform: scale(1.05);
+        }
+        
+        /* Texto con logo pequeño */
+        .proton-text {
+            text-align: center;
+            font-size: 1.15rem;
+            line-height: 1.6;
+            color: var(--dark-gray);
+            flex: 1;
+            min-width: 300px;
+        }
+        
+        .proton-text-link {
+            color: var(--navy);
+            font-weight: 700;
+            text-decoration: none;
+            display: inline-flex;
+            align-items: center;
+            gap: 0.4rem;
+            transition: all 0.3s ease;
+            padding: 0.2rem 0.5rem;
+            border-radius: 4px;
+        }
+        
+        .proton-text-link:hover {
+            color: var(--gold);
+            background: rgba(212, 175, 55, 0.1);
+        }
+        
+        /* Logo pequeño dentro del texto */
+        .inline-proton-logo {
+            height: 22px;
+            width: auto;
+            vertical-align: middle;
+            transition: transform 0.3s ease;
+        }
+        
+        .proton-text-link:hover .inline-proton-logo {
+            transform: scale(1.1);
+        }
+        
+        /* ===== FOOTER ===== */
+        footer {
+            background-color: var(--navy);
+            color: var(--white);
+            padding: 5rem 2rem 3rem;
+        }
+        
+        .footer-content {
+            max-width: 1200px;
+            margin: 0 auto;
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+            gap: 4rem;
+            margin-bottom: 4rem;
+        }
+        
+        .footer-section h3 {
+            color: var(--white);
+            font-size: 1.8rem;
+            margin-bottom: 1.8rem;
+            padding-bottom: 0.8rem;
+            border-bottom: 2px solid var(--gold);
+        }
+        
+        .footer-links {
+            list-style: none;
+        }
+        
+        .footer-links li {
+            margin-bottom: 1rem;
+        }
+        
+        .footer-links a {
+            color: rgba(255, 255, 255, 0.85);
+            text-decoration: none;
+            transition: all 0.3s;
+            font-size: 1.05rem;
+            display: inline-flex;
+            align-items: center;
+            gap: 0.5rem;
+        }
+        
+        .footer-links a:hover {
+            color: var(--gold);
+            transform: translateX(5px);
+        }
+        
+        .qr-section {
+            text-align: center;
+        }
+        
+        .qr-code {
+            width: 180px;
+            height: 180px;
+            margin-bottom: 1.5rem;
+            border-radius: 10px;
+            box-shadow: 0 8px 20px rgba(0, 0, 0, 0.2);
+            border: 2px solid var(--gold);
+        }
+        
+        .copyright {
+            text-align: center;
+            padding-top: 3rem;
+            border-top: 1px solid rgba(255, 255, 255, 0.15);
+            color: rgba(255, 255, 255, 0.7);
+            font-size: 1rem;
+        }
+        
+        /* ===== RESPONSIVE DESIGN ===== */
+        @media (max-width: 1000px) {
+            .about-content {
+                grid-template-columns: 1fr;
+                gap: 3rem;
+            }
+            
+            h1 {
+                font-size: 3rem;
+            }
+            
+            .section-title {
+                font-size: 2.5rem;
+            }
+            
+            .services-grid {
+                grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+            }
+        }
+        
+        @media (max-width: 768px) {
+            .main-header {
+                padding: 1rem 1.5rem 4rem;
+            }
+            
+            h1 {
+                font-size: 2.5rem;
+            }
+            
+            .hero-tagline {
+                font-size: 1.5rem;
+            }
+            
+            .hero-subtitle {
+                font-size: 1.1rem;
+            }
+            
+            .top-nav {
+                flex-direction: column;
+                gap: 1.5rem;
+                margin-bottom: 2.5rem;
+            }
+            
+            .nav-links {
+                flex-wrap: wrap;
+                justify-content: center;
+            }
+            
+            .language-switcher {
+                margin-left: 0;
+            }
+            
+            section {
+                padding: 4rem 0;
+            }
+            
+            .main-container {
+                padding: 0 1.5rem;
+            }
+            
+            .about-text-column {
+                padding: 2rem;
+            }
+            
+            .service-card {
+                padding: 2.2rem 1.8rem;
+            }
+            
+            .contact-form {
+                padding: 2.5rem;
+            }
+            
+            .footer-content {
+                grid-template-columns: 1fr;
+                text-align: center;
+                gap: 3rem;
+            }
+            
+            .footer-links a {
+                justify-content: center;
+            }
+            
+            .proton-badge {
+                flex-direction: column;
+                text-align: center;
+                padding: 1.8rem;
+                gap: 1.5rem;
+            }
+            
+            .proton-text {
+                min-width: auto;
+            }
+        }
+        
+        @media (max-width: 480px) {
+            h1 {
+                font-size: 2.2rem;
+            }
+            
+            .hero-tagline {
+                font-size: 1.3rem;
+            }
+            
+            .hero-subtitle {
+                font-size: 1rem;
+            }
+            
+            .section-title {
+                font-size: 2.2rem;
+            }
+            
+            .about-text-column {
+                padding: 1.8rem;
+            }
+            
+            .service-card {
+                padding: 2rem 1.5rem;
+            }
+            
+            .contact-form {
+                padding: 2rem;
+            }
+            
+            .contact-details {
+                grid-template-columns: 1fr;
+            }
+            
+            .contact-item {
+                padding: 1.8rem;
+            }
+            
+            .hero-logo, .nav-logo {
+                width: 120px;
+                height: 120px;
+            }
+            
+            .nav-logo {
+                width: 40px;
+                height: 40px;
+            }
+            
+            .proton-badge-logo {
+                height: 60px;
+            }
+            
+            .inline-proton-logo {
+                height: 20px;
+            }
+        }
+    </style>
+</head>
+<body>
+    <!-- ===== HEADER & NAVIGATION ===== -->
+    <header class="main-header">
+        <div class="header-content">
+            <!-- Top Navigation -->
+            <nav class="top-nav">
+                <a href="index.html" class="logo-nav">
+                    <img src="Escudo.jpg" alt="González Family Coat of Arms" class="nav-logo">
+                    <span class="nav-brand">Jorge González, LL.M.</span>
+                </a>
+                
+                <div class="nav-links">
+                    <a href="#about" class="nav-link">About Me</a>
+                    <a href="#services" class="nav-link">Services</a>
+                    <a href="#contact" class="nav-link">Contact</a>
+                    
+                    <div class="language-switcher">
+                        <a href="index.html" class="lang-btn">
+                            <i class="fas fa-language"></i>
+                            <span>Change Language</span>
+                        </a>
+                    </div>
+                </div>
+            </nav>
+            
+            <!-- Hero Section -->
+            <div class="hero-section">
+                <img src="Escudo.jpg" alt="González Family Coat of Arms" class="hero-logo">
+                <h1>Jorge González, LL.M.</h1>
+                <p class="hero-tagline">Happy Expats, Peaceful Businesses</p>
+                <p class="hero-subtitle">
+                    International advisory services for expatriates and businesses establishing themselves on the Costa del Sol. 
+                    From tax optimization to residency planning and business advisory.
+                </p>
+                <a href="#contact" class="cta-button">Start Your Spanish Journey</a>
+            </div>
+        </div>
+    </header>
+
+    <!-- ===== ABOUT ME ===== -->
+    <section id="about" class="about-section">
+        <div class="main-container">
+            <h2 class="section-title">About Me</h2>
+            
+            <div class="about-content">
+                <div class="about-photo-column">
+                    <img src="jorge-photo.jpg" alt="Jorge González" class="profile-photo">
+                </div>
+                
+                <div class="about-text-column">
+                    <h3>Your Trusted Advisor in Spain</h3>
+                    
+                    <ul class="credentials-list">
+                        <li>Bachelor of Laws (Universidad Católica de Ávila)</li>
+                        <li>LLM in International Business Law (National University of Ireland Maynooth and Université Catholique de Lyon)</li>
+                        <li>Master of Laws in Tax Law (Lund University)</li>
+                        <li>Master of Arts in Contemporary European Studies (University of Sussex)</li>
+                    </ul>
+                    
+                    <div class="highlight-box">
+                        <p>With extensive knowledge in international law and deep understanding of expatriate challenges, I provide personalized solutions for individuals and businesses establishing themselves in Spain.</p>
+                        <p>My practice focuses exclusively on serving the international community, offering clear guidance through tax optimization, residency planning, and business advisory in English, French, Spanish, and Portuguese.</p>
+                        <p>My approach combines legal expertise with a genuine understanding of the personal and professional transitions involved in relocating to a new country.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- ===== SERVICES ===== -->
+    <section id="services" class="services-section">
+        <div class="main-container">
+            <h2 class="section-title">My Services</h2>
+            
+            <p class="services-intro">
+                I provide comprehensive advisory services tailored to the unique needs of expatriates and international 
+                businesses establishing themselves in Spain. Each service is designed to ensure a smooth transition 
+                and successful integration into the Spanish environment.
+            </p>
+            
+            <div class="services-grid">
+                <!-- Service 1 -->
+                <div class="service-card">
+                    <div class="service-icon">
+                        <i class="fas fa-passport"></i>
+                    </div>
+                    <h3>Residency & Fiscal Planning</h3>
+                    <p>Guidance on Spanish residency permits, NIE applications, and strategic tax planning including the Beckham Law regime for qualifying professionals.</p>
+                </div>
+                
+                <!-- Service 2 -->
+                <div class="service-card">
+                    <div class="service-icon">
+                        <i class="fas fa-chart-line"></i>
+                    </div>
+                    <h3>Tax Optimization</h3>
+                    <p>Strategic tax planning for expatriates, including analysis of applicable tax regimes and optimization of cross-border income and investments.</p>
+                </div>
+                
+                <!-- Service 3 -->
+                <div class="service-card">
+                    <div class="service-icon">
+                        <i class="fas fa-briefcase"></i>
+                    </div>
+                    <h3>Business Advisory</h3>
+                    <p>Support for international businesses and entrepreneurs establishing operations in Spain, including company structuring and compliance guidance.</p>
+                </div>
+                
+                <!-- Service 4 -->
+                <div class="service-card">
+                    <div class="service-icon">
+                        <i class="fas fa-home"></i>
+                    </div>
+                    <h3>Property Acquisition Support</h3>
+                    <p>Assistance with the property acquisition process in Spain, including due diligence review and coordination with local legal professionals.</p>
+                </div>
+                
+                <!-- Service 5 -->
+                <div class="service-card">
+                    <div class="service-icon">
+                        <i class="fas fa-plane-departure"></i>
+                    </div>
+                    <h3>Comprehensive Relocation Support</h3>
+                    <p>End-to-end support for individuals and families relocating to Spain, from administrative procedures to cultural integration guidance.</p>
+                </div>
+                
+                <!-- Service 6 -->
+                <div class="service-card">
+                    <div class="service-icon">
+                        <i class="fas fa-globe-europe"></i>
+                    </div>
+                    <h3>Cross-Border Succession Planning</h3>
+                    <p>Advisory on international inheritance matters and succession planning for assets located in multiple jurisdictions.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- ===== CONTACT ===== -->
+    <section id="contact" class="contact-section">
+        <div class="main-container">
+            <h2 class="section-title">Get In Touch</h2>
+            
+            <div class="contact-container">
+                <div class="contact-info">
+                    <h3>Ready to begin your Spanish journey?</h3>
+                    <p>Contact me for a confidential consultation regarding your residency, tax, or business needs in Spain.</p>
+                    
+                    <div class="contact-details">
+                        <div class="contact-item">
+                            <h4><i class="fas fa-clock"></i> Response Time</h4>
+                            <p>Within 24 hours on business days</p>
+                        </div>
+                        <div class="contact-item">
+                            <h4><i class="fas fa-language"></i> Languages</h4>
+                            <p>English, French, Spanish, Portuguese</p>
+                        </div>
+                        <div class="contact-item">
+                            <h4><i class="fas fa-map-marker-alt"></i> Location Focus</h4>
+                            <p>Costa del Sol, Andalusia</p>
+                        </div>
+                    </div>
+                </div>
+                
+                <form class="contact-form" action="mailto:jorge@glez.law" method="post" enctype="text/plain">
+                    <div class="form-group">
+                        <label for="name">Full Name *</label>
+                        <input type="text" id="name" name="name" required>
+                    </div>
+                    
+                    <div class="form-group">
+                        <label for="email">Email Address *</label>
+                        <input type="email" id="email" name="email" required>
+                    </div>
+                    
+                    <div class="form-group">
+                        <label for="service">Service of Interest</label>
+                        <select id="service" name="service">
+                            <option value="">Select a service</option>
+                            <option value="residency">Residency & Fiscal Planning</option>
+                            <option value="tax">Tax Optimization</option>
+                            <option value="business">Business Advisory</option>
+                            <option value="property">Property Acquisition Support</option>
+                            <option value="relocation">Comprehensive Relocation Support</option>
+                            <option value="succession">Cross-Border Succession Planning</option>
+                            <option value="other">Other Inquiry</option>
+                        </select>
+                    </div>
+                    
+                    <div class="form-group">
+                        <label for="message">Your Message *</label>
+                        <textarea id="message" name="message" placeholder="Please provide details about your situation and what you need assistance with..." required></textarea>
+                    </div>
+                    
+                    <button type="submit" class="submit-button">
+                        <i class="fas fa-paper-plane"></i>
+                        <span>Send Message</span>
+                    </button>
+                </form>
+                
+                <!-- ProtonMail Badge with TWO Logos -->
+                <div class="proton-badge">
+                    <!-- Logo grande con tagline (protonmail-logo.png) -->
+                    <a href="https://proton.me" target="_blank" rel="noopener" class="proton-logo-link">
+                        <img src="protonmail-logo.png" alt="Proton - Privacy by default" class="proton-badge-logo">
+                    </a>
+                    
+                    <div class="proton-text">
+                        We use 
+                        <a href="https://proton.me" target="_blank" rel="noopener" class="proton-text-link">
+                            <!-- Logo pequeño dentro del texto (proton-logo.png) -->
+                            <img src="proton-logo.png" alt="Proton" class="inline-proton-logo">
+                            Proton
+                        </a> 
+                        for the security of your information.
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- ===== FOOTER ===== -->
+    <footer>
+        <div class="footer-content">
+            <div class="footer-section">
+                <h3>Jorge González, LL.M.</h3>
+                <p>International advisory services for expatriates and businesses establishing themselves in Spain. Your trusted partner for a successful transition to the Costa del Sol.</p>
+            </div>
+            
+            <div class="footer-section">
+                <h3>Quick Links</h3>
+                <ul class="footer-links">
+                    <li><a href="#about"><i class="fas fa-user"></i> About Me</a></li>
+                    <li><a href="#services"><i class="fas fa-briefcase"></i> Services</a></li>
+                    <li><a href="#contact"><i class="fas fa-envelope"></i> Contact</a></li>
+                    <li><a href="index.html"><i class="fas fa-language"></i> Change Language</a></li>
+                </ul>
+            </div>
+            
+            <div class="footer-section qr-section">
+                <h3>Save Our Contact</h3>
+                <img src="qr-code(1).png" alt="QR Code" class="qr-code">
+                <p>Scan to save contact details</p>
+            </div>
+        </div>
+        
+        <div class="copyright">
+            <p>&copy; 2025 Jorge González, LL.M. | International advisory for expatriates in Spain</p>
+        </div>
+    </footer>
+</body>
+</html>
